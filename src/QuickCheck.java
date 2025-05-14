@@ -19,7 +19,10 @@ public class QuickCheck {
     if (node == null) return;
             
     // Pre-order processing: check current node first
-    
+    String value = node.getValue();
+    if (value.length() > 7) {
+        System.out.println(value);
+    }
     
     // Recursively check left and right subtrees
     printLongerThan7(node.getLeft());
@@ -45,11 +48,7 @@ public class QuickCheck {
       int currentValue = node.getValue();
       int sum = (currentValue % 2 != 0) ? currentValue : 0;
       
-      // Add results from left and right subtrees
-      sum += oddSum(node.getLeft());
-      sum += oddSum(node.getRight());
-      
-      return sum;
+     
   
   }
 }
