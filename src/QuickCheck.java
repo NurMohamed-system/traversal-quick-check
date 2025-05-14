@@ -48,7 +48,11 @@ public class QuickCheck {
       int currentValue = node.getValue();
       int sum = (currentValue % 2 != 0) ? currentValue : 0;
       
-     
+      // Add results from left and right subtrees
+      sum += oddSum(node.getLeft());
+      sum += oddSum(node.getRight());
+      
+      return sum;
   
   }
 }
