@@ -12,4 +12,19 @@ public class TreeNode<E> {
   public TreeNode(E data) {
     this(data, null, null);
   }
+
+  public String getValue() {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'getValue'");
+  }
+
+  public TreeNode<String> getLeft() {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'getLeft'");
+  }
+
+  public TreeNode<String> getRight() {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'getRight'");
+  }
 }

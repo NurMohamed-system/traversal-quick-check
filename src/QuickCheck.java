@@ -15,6 +15,16 @@ public class QuickCheck {
    * @param node the root node of the binary tree
    */
   public static void printLongerThan7(TreeNode<String> node) {
+    // Base case: empty node
+    if (node == null) return;
+            
+    // Pre-order processing: check current node first
+    
+    
+    // Recursively check left and right subtrees
+    printLongerThan7(node.getLeft());
+    printLongerThan7(node.getRight());
+
   }
 
   /**
@@ -28,6 +38,18 @@ public class QuickCheck {
    * @return the sum of all odd-valued nodes
    */
   public static int oddSum(TreeNode<Integer> node) {
-      return -1;
+      // Base case: empty node
+      if (node == null) return 0;
+        
+      // Check if current node's value is odd
+      int currentValue = node.getValue();
+      int sum = (currentValue % 2 != 0) ? currentValue : 0;
+      
+      // Add results from left and right subtrees
+      sum += oddSum(node.getLeft());
+      sum += oddSum(node.getRight());
+      
+      return sum;
+  
   }
 }
