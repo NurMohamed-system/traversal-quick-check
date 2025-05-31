@@ -18,7 +18,7 @@ public class TreeNode<E> {
     throw new UnsupportedOperationException("Unimplemented method 'getValue'");
   }
 
-  public TreeNode<String> getLeft() {
+  public TreeNode<Integer> getLeft() {
     // TODO Auto-generated method stub
     throw new UnsupportedOperationException("Unimplemented method 'getLeft'");
   }
